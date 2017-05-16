@@ -1,0 +1,25 @@
+{{frost-tabs
+    hook='tabs'
+    onChange=(action 'selectTab')
+    selectedTab=selectedTab
+    tabs=(array
+      (component 'frost-tab'
+        id='topo'
+        text='topo'
+        content=(component 'dt-topo'
+          id=1
+          linkEndSite=linkEndSite
+          onEndAddLink=(action 'onEndAddLink')
+        )
+      )
+      (component 'frost-tab'
+        id='topo2'
+        text='topo2'
+        content=(component 'dt-topo'
+          id=2
+          linkEndSite=linkEndSite
+          onEndAddLink=(action 'onEndAddLink')
+        )
+      )
+    )
+  }}

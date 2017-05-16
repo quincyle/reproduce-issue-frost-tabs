@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'tab-test',
+    podModulePrefix: 'tab-test/pods',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
